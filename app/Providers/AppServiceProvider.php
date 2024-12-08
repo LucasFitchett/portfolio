@@ -7,6 +7,7 @@ use Statamic\Statamic;
 
 class AppServiceProvider extends ServiceProvider
 {
+    
     /**
      * Register any application services.
      */

@@ -1,15 +1,41 @@
 <!doctype html>
-<html lang="{{ site:short_locale }}">
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
+        <meta charset="utf-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>{{ title ?? "Lucas Fitchett" }}</title>
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
-    <body class="bg-gray-100 font-sans leading-normal text-gray-800">
-        <div class="mx-auto px-2 lg:min-h-screen flex flex-col items-center justify-center">
-            {{ template_content }}
+    <body class="bg-slate-900 text-slate-400">
+        <div class="max-w-2xl mx-auto px-4">
+            <header class="py-6">
+                <nav>
+                    <ul class="flex gap-8 items-center">
+                        <li class="mr-auto">
+                            <a
+                                href="/"
+                                class="font-medium text-slate-200 text-xl leading-4"
+                                >Lucas Fitchett</a
+                            >
+                        </li>
+                        {{ nav:header}}
+                        <li>
+                            <a
+                                href="{{ url }}"
+                                class="inline-block text-lg styled-underline leading-4"
+                                >{{ title }}</a
+                            >
+                        </li>
+                        {{ /nav:header }}
+                    </ul>
+                </nav>
+            </header>
+            <main>{{ template_content}}</main>
+            <footer class="py-4 mt-4">
+                <hr class="border-slate-800" />
+                <p class="text-center mt-4">&copy; 2024 Lucas Fitchett</p>
+            </footer>
         </div>
     </body>
 </html>

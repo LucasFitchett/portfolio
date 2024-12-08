@@ -1,0 +1,19 @@
+<div class="py-4">
+    <img
+        src="{{ featured_image }}"
+        alt="{{ featured_image:alt }}"
+        class="rounded-3xl aspect-video object-cover"
+    />
+    <h1 class="font-black text-white text-4xl mt-6">{{ title }}</h1>
+    <time
+        datetime="{{ date format='Y-m-d'}}"
+        class="block mt-2 font-mono text-sm"
+        >{{ date }}</time
+    >
+    <hr class="border-slate-800 mt-6" />
+    <div
+        class="mt-6 prose prose-slate prose-invert prose-pre:bg-slate-950 prose-pre:rounded-2xl prose-a:styled-underline lg:prose-xl"
+    >
+        {{ content }}
+    </div>
+</div>
