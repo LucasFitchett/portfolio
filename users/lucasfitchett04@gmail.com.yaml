@@ -2,3 +2,5 @@ name: Lucas
 super: true
 id: e6d3014e-095f-45da-97bc-742715b41510
 password_hash: $2y$12$9twZXdmP4tw1H0OVfuEpa.pja71Q63/oNHcWL6xIFAj3KpRJ0IlZK
+preferences:
+  theme: dark

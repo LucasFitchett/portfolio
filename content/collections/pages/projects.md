@@ -5,5 +5,6 @@ title: Projects
 author: e6d3014e-095f-45da-97bc-742715b41510
 template: projects/index
 updated_by: e6d3014e-095f-45da-97bc-742715b41510
-updated_at: 1733681811
+updated_at: 1733687455
+meta_title: 'Lucas Fitchett - Projects'
 ---

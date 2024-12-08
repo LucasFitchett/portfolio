@@ -1,6 +1,7 @@
 title: Page
 tabs:
   main:
+    display: Main
     sections:
       -
         fields:
@@ -9,12 +10,8 @@ tabs:
             field:
               type: text
               required: true
-          -
-            handle: content
-            field:
-              type: markdown
-              display: Content
-              localizable: true
+              validate:
+                - required
           -
             handle: author
             field:
@@ -29,7 +26,18 @@ tabs:
               type: template
               display: Template
               localizable: true
+          -
+            handle: meta_title
+            field:
+              type: text
+              display: 'Meta Title'
+          -
+            handle: meta_description
+            field:
+              type: textarea
+              display: 'Meta Description'
   sidebar:
+    display: Sidebar
     sections:
       -
         fields:
